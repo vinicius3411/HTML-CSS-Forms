@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário empresa XYZ</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Stylesheet.css" />
+  </head>
+  <body>
+    <form method="post" name="formXYZ" action="send">
+      <fieldset>
+        <h1>Formulário XYZ</h1>
+        <hr />
+        <label> Nome: </label>
+        <input
+          type="text"
+          name="Nome"
+          size="50"
+          placeholder="Insira seu nome"
+          required="required"
+        />
+        <br />
+        <a href="help.html">Help</a>
+        <br />
+        <label> Data Nascimento: </label>
+        <input id="date" type="date" name="data" required="required" />
+        <br />
+        <a href="help.html">Help</a>
+        <br />
+        <label> Cidade: </label>
+        <input
+          type="text"
+          placeholder="cidade atual"
+          name="cidade"
+          size="30"
+          required="required"
+        />
+        <br />
+        <a href="help.html">Help</a>
+        <br />
+        <label> Estado: </label>
+        <select name="estado" required="required">
+          <option value="none" selected disabled hidden>
+            Selecione um estado
+          </option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <br />
+        <a href="help.html">Help</a> <br />
+        <label> Sexo: </label>
+        <select>
+          <option value="none" selected disabled hidden>
+            Selecione um Sexo
+          </option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+        <br />
+        <a href="help.html">Help</a> <br />
+        <label> Bens pessoais: </label>
+        <div>
+          <input type="checkbox" id="casa1" name="casa1" value="Casa" />
+          <label for="casa1"> Casa </label>
+          <br />
+          <input type="checkbox" id="carro1" name="carro1" value="Carro" />
+          <label for="carro1"> Carro </label>
+          <br />
+          <input type="checkbox" id="moto1" name="moto1" value="Moto" />
+          <label for="moto1"> Moto </label>
+          <br />
+        </div>
+        <input type="submit" name="enviar" value="Enviar" />
+        <input type="reset" name="limpar" value="Limpar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
